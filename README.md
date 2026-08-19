@@ -19,8 +19,6 @@ The plugin runs entirely inside Omarchy's existing Quickshell process. It needs 
 
 [Open the full-quality video](demo.mp4) for the complete 1920x1280 recording.
 
-[Open the Twitter-ready technique picker clip](twitter-dropdown-demo.mp4) to see the dropdown, cadence selection, countdown, and resulting session.
-
 ## Features
 
 - Original layered bloom animation colored by the active Omarchy theme.
