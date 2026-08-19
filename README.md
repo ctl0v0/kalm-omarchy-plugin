@@ -9,9 +9,17 @@ The plugin runs entirely inside Omarchy's existing Quickshell process. It needs 
 
 ## Demo
 
+### Breathing Session
+
 ![A Box Breathing session running in Kalm](demo.gif)
 
-[Watch the full walkthrough](demo.mp4) to see session setup, the countdown, full-screen mode, and live Omarchy theme changes.
+### Full Walkthrough
+
+![Kalm session setup, full-screen mode, and live Omarchy theme changes](walkthrough.gif)
+
+[Open the full-quality video](demo.mp4) for the complete 1920x1280 recording.
+
+[Open the Twitter-ready technique picker clip](twitter-dropdown-demo.mp4) to see the dropdown, cadence selection, countdown, and resulting session.
 
 ## Features
 
