@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.ctl0v0.kalm",
+  "name": "Kalm",
+  "version": "1.0.0",
+  "author": "ctl0v0",
+  "license": "MIT",
+  "description": "A guided breathing companion for the Omarchy bar with seven techniques, a procedural bloom, and full-screen sessions.",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Kalm",
+    "description": "Start and follow guided breathing sessions from the Omarchy bar.",
+    "category": "Wellness",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "defaultTechnique": "Box Breathing",
+      "defaultDurationMinutes": 1,
+      "reducedMotion": false
+    },
+    "schema": [
+      {
+        "key": "defaultTechnique",
+        "type": "enum",
+        "label": "Default breathing technique",
+        "description": "The technique selected when Kalm opens.",
+        "options": [
+          "Box Breathing",
+          "Resonant Breathing",
+          "4-7-8 Breathing",
+          "Box Breathing for Sleep",
+          "Coordinated Breathing",
+          "Nadi Shodhana",
+          "Yogic Breathing"
+        ],
+        "defaultValue": "Box Breathing"
+      },
+      {
+        "key": "defaultDurationMinutes",
+        "type": "integer",
+        "label": "Default duration (minutes)",
+        "description": "Sessions finish at the first complete breathing cycle after this duration.",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "defaultValue": 1
+      },
+      {
+        "key": "reducedMotion",
+        "type": "boolean",
+        "label": "Use reduced motion",
+        "description": "Use restrained scale changes without petal rotation or travel.",
+        "defaultValue": false
+      }
+    ]
+  }
+}
